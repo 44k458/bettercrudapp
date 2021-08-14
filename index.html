@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CRUD NEW</title>
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<style>
+
+body
+{
+	 	background-color: grey;
+	 	margin: 0px 0px 0px 0px;
+	 	display: grid;
+	 	grid-template-columns: 100%;
+}
+#idea
+{
+	background-color: black;
+	height: 650%;
+}
+#grand
+{
+ margin-left: ;
+ display:grid;
+ position: absolute;
+ grid-template-columns: 50% 50%;
+}
+#teacher
+{
+	background-color: black;
+	color: whitesmoke;
+}
+#teacher,#student
+{
+	height: 100px;
+	margin-top: 20px;
+	width: 400px;
+	border: none;
+	font-size: 30px;
+	margin-bottom: 50px;
+}
+a
+{
+	text-decoration: none !important;
+	text-decoration-color: none;
+}
+#tp
+{
+ margin-top: 50px;
+ text-align: center;
+ margin-right: 30px;
+ color: whitesmoke;
+ font-size: 20px;
+ background-color: cadetblue;
+ margin-left: 20px;
+ padding-bottom: 50px;
+     font-family: 'Abel', sans-serif;
+}
+#sp
+{
+         font-family: 'Abel', sans-serif;
+	margin-top: 50px;
+	text-align: center;
+	font-size: 20px;
+	background-color: cadetblue;
+	color: black;
+	margin-right: 20px;
+    padding-bottom: 50px;
+}
+#clicky
+{
+	height: 50px;
+	width: 100px;
+	margin-top: 30px;
+	border: none;
+	background-color: white;
+}
+</style>
+<body>
+<div id="grand">
+	<div id="tp">
+    <button id="teacher">TEACHERS' PAGE</button>	<br><b>
+     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</b><br>
+     <button id="clicky">
+     	<a href="http://localhost/crudthree/teacherspage.html">
+        CLICK HERE</a>
+     </button>     
+    </div>
+    <div id="sp">
+ 	<button id="student">STUDENTS' PAGE</button><br><b>
+     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</b><br>
+          <button id="clicky"><a href="studentspage.html">
+        CLICK HERE</a>
+     </button>    
+    </div>
+</div>
+ <div id="idea">
+&nbsp
+
+</div>
+
+</body>
+<script>
+
+$(document).ready(function()
+{
+   $("#tp").addClass("animate__animated animate__bounceIn");
+   $("#sp").addClass("animate__animated animate__bounceIn");
+   
+   $( "#tp" ).mouseover(function() {
+        $( "#tp" ).css("box-shadow","15px 15px");
+     });
+   $( "#tp" ).mouseout(function() {
+        $( "#tp" ).css("box-shadow","0px 0px");
+     });
+    $( "#sp" ).mouseover(function() {
+        $( "#sp" ).css("box-shadow","15px 15px");
+     });
+   $( "#sp" ).mouseout(function() {
+        $( "#sp" ).css("box-shadow","0px 0px");
+     });
+
+});
+
+
+
+
+
+
+
+</script>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>UPDATE SCIENCE DATA</title>
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+<style>
+  @import url(http://fonts.googleapis.com/css?family=Montserrat);
+</style>
+</head>
+
+<style>
+body
+{
+	background-color: black;
+	color: whitesmoke;
+}
+#zero
+{
+	font-size: 40px;
+	border: solid 3px whitesmoke;
+	text-align: center;
+}
+#one
+{
+	font-family: font-family: 'Montserrat', sans-serif;
+	text-align: center;
+}
+input[type="number"]
+{
+	height: 50px;
+	background-color: grey;
+	border-bottom: solid 5px white;
+	border-left: none;
+	font-size: 40px;
+	width: 300px;
+	color: whitesmoke;
+	border-top: none;
+	border-right: none;
+}
+table
+{
+	text-align: left;
+
+}
+#gobackhome
+{
+
+    text-align: center;
+    margin-top: 30px;
+}#home
+{
+    height: 100px;
+    border: none;
+    width: 300px;
+    background-color: whitesmoke;
+    color: black;
+    text-decoration: none;
+    text-align: center; 
+}
+form
+{
+	text-align: center;
+}
+#sendupdate
+{
+	text-align: center;
+	height: 50px;
+	width: 180px;
+	border: none;
+
+}
+</style>
+<body>
+<div id="zero">
+	
+<div id="one">
+
+<form method="$_GET" action="updatesc.php">
+Whose marks would you like to change?<br>
+<table>
+<tr><td><input type="number" name="Rn">Roll number</td></tr>
+<tr><td><input type="number" name="Physics">Physics</td></tr>
+<tr><td><input type="number" name="Chemistry">Chemistry</td></tr>
+<tr><td><input type="number" name="Maths">Maths</td></tr>
+<tr><td><input type="submit" id="sendupdate"></td></tr>
+</table>
+</form>
+</div>
+<div id="gobackhome"><button id="home"><a href="http://localhost/crudthree/index.html">GO BACK HOME</button></div>
+</div>
+</body>
+</html>

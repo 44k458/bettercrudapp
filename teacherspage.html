@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CRUD NEW</title>
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<style>
+body
+{
+        background-color: black;
+}
+#all,#alltwo
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#entermarks,#fetchmarks,#updatemarks,#deletemarks
+{
+    background-color: whitesmoke;
+    color:black;
+    margin-top: 50px;
+    font-size: 20px;   
+    float: left;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    margin-right: 20px;
+}
+#submitform
+{
+    height: 30px;
+    width: 200px;
+    border: none;
+    background-color: cadetblue;
+    color: black;
+    font-size: 20px;
+}
+input[type="text"],input[type="radio"]
+{
+    background-color: transparent;
+    border: solid black 2px;
+}
+#gobackhome
+{
+    text-align: center;
+    margin-top: 30px;
+}
+
+#home
+{
+    height: 100px;
+    border: none;
+    width: 300px;
+    background-color: whitesmoke;
+    color: black;
+    text-decoration: none;
+    text-align: center; 
+}
+input
+{
+    margin-top: 40px;
+}
+#enter,#fetch,#delete,#update
+{
+    text-align: center;
+}
+a
+{
+    text-align: center;
+    text-decoration: none;
+    text-decoration-color: black;
+    font-size: 30px;
+}
+</style>
+<body>
+
+<div id="all">
+    <div id="entermarks">
+        <form method="get" action="entermarks.php">
+            <div id="enter">Enter the marks</div>
+            Please select the stream:
+            <input type="radio" name="choice" value="science" required id="science"> SCIENCE
+            <input type="radio" name="choice"  value="commerce" id="commerce"> COMMERCE
+            <input type="radio" name="choice" value="arts" id="arts"> ARTS<br>
+            <input type="submit" name="submit" id="submitform">                         
+        </form>
+    </div>
+
+<div id="fetchmarks">
+
+        <form method="get" action="fetchmarks.php">
+                       <div id="fetch">Fetch the marks</div>
+            Please select the stream:
+            <input type="radio" name="choice" value="sc" required id="science"> SCIENCE
+            <input type="radio" name="choice" value="co" id="commerce"> COMMERCE
+            <input type="radio" name="choice" value="ar" id="arts"> ARTS<br>
+            <input type="submit" name="submit" id="submitform">                         
+        </form>
+    </div>
+</div></div>
+<div id="alltwo">
+<div id="updatemarks">
+
+        <form method="get" action="updatemarks.php">
+                       <div id="update">update the marks</div>
+            Please select the stream:
+            <input type="radio" name="choice"  required id="science" value="science"> SCIENCE
+            <input type="radio" name="choice" value="commerce" id="commerce"> COMMERCE
+            <input type="radio" name="choice"  value="arts" id="arts"> ARTS<br>
+            <input type="submit" name="submit" id="submitform">                         
+        </form>
+    </div>
+
+<div id="deletemarks">
+
+        <form method="get" action="deletemarks.php">
+                       <div id="delete">Delete the records</div>
+            Please select the stream:<input type="radio" name="choice" value="sc" required id="science"> SCIENCE
+                                                 <input type="radio" name="choice" value="co" id="commerce"> COMMERCE
+                                     <input type="radio" name="choice" value="ar" id="arts"> ARTS<br>
+            <input type="submit" name="submit" id="submitform">                         
+        </form>
+    </div>
+</div>
+</div>
+<div id="gobackhome"><button id="home"><a href="http://localhost/crudthree/index.html">GO BACK HOME</button></div>
+</body>
+<script>
+$(document).ready(function()
+{
+   // $("#one").addClass("animate__animated animate__bounceIn");
+   $("#all").addClass("animate__animated animate__bounceIn");
+      $("#alltwo").addClass("animate__animated animate__bounceIn");
+   });
+
+
+    </script>
+</html>

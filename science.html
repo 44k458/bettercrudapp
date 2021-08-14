@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>SCIENCE PAGE</title>
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<style>
+body
+{
+	background-color: black;
+	text-align: center;
+
+}
+#one
+{
+        text-align: center;
+	    font-size: 30px;
+}
+#formdata
+{
+  text-align: center;
+  margin-left: 33%;
+  margin-top: 40px;
+}
+#ro
+{
+	width: 30px;
+    border: none;
+}
+#ro,#tx,#nm
+{
+	line-height: 50px;
+}
+input[type="submit"]
+{
+	background-color: whitesmoke;
+	font-size: 20px;
+	height: 50px;
+	width: 200px;
+	border: none;
+}
+#p,#c,#m
+{
+	width: 100px;
+}
+#ro,#tx,#p,#c,#m,#nm
+{
+	    font-size: 30px;
+    background-color: #919090;
+	border: none;
+
+}
+#nm
+{
+	margin-top: 20px;
+}
+#zero
+{
+	background-color: black;
+	text-align: center;
+	color: whitesmoke;
+}
+a
+{
+	 font-size: 30px;
+	    text-decoration: none
+	}
+#gobackhome
+{
+
+    text-align: center;
+    margin-top: 30px;
+}
+#home
+{
+    height: 100px;
+    border: none;
+    width: 300px;
+    background-color: whitesmoke;
+    color: black;
+    text-decoration: none;
+    text-align: center; 
+}
+#oo
+{
+	padding-top:50px ;
+}
+</style>
+<body>
+	<div id="zero">
+
+	<div id="one">
+    <div id="oo">ENTER THE MARKS FOR SCIENCE STUDENT</div><br>
+    <form method="$_GET" action="scienceenter.php">
+    Please enter the roll number :  <input type="text" id="ro" value=" SC" readonly><input type="number" name="rn" id="tx" required><br>		
+    Please enter the name of the student:<input type="text" id="nm" required name="nm"><br>
+    Please enter the marks for respective subjects:<br>
+    <table id="formdata">
+  <tr>  <td> PHYSICS   </td><td> <input type="number" name="pp" id="p" required></td><td>/100</td></tr>
+      <tr>    <td>CHEMISTRY   </td><td> <input type="number" name="cc" id="c" required></td><td>/100</td></tr>
+          <tr>    <td> MATHS   </td><td> <input type="number"  name="mm" id="m" required></td><td>/100</td></tr>
+              <tr> <td><input type="submit"></td></tr></table>
+       </form>
+  <div id="gobackhome"><button id="home"><a href="http://localhost/crudthree/index.html">GO BACK HOME</button></div>
+	</div>
+</div>
+</body>
+<script>
+$(document).ready(function()
+{
+   $("#zero").addClass("animate__animated animate__bounceIn");
+   });
+
+</script>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>STUDENTS' PAGE</title>
+</head>
+<style>
+
+body
+{
+        background-color: black;
+        text-align: center;
+}
+#all,#alltwo
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#fetchmarks
+{
+    background-color: whitesmoke;
+    color:black;
+    margin-top: 50px;
+    font-size: 20px;   
+    float: left;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    margin-right: 20px;
+}
+#submitform
+{
+    height: 30px;
+    width: 200px;
+    border: none;
+    background-color: cadetblue;
+    color: black;
+    font-size: 20px;
+}
+input[type="text"],input[type="radio"]
+{
+    background-color: transparent;
+    border: solid black 2px;
+}
+#gobackhome
+{
+    text-align: center;
+    margin-top: 30px;
+}
+
+#home
+{
+    height: 100px;
+    border: none;
+    width: 300px;
+    background-color: whitesmoke;
+    color: black;
+    text-decoration: none;
+    text-align: center; 
+}
+input
+{
+    margin-top: 40px;
+}
+#fetch
+{
+    text-align: center;
+}
+a
+{
+    text-align: center;
+    text-decoration: none;
+    text-decoration-color: black;
+    font-size: 30px;
+}
+
+
+</style>
+<body>
+	<div id="zero">
+<div id="fetchmarks">
+
+        <form method="get" action="fetchmarks.php">
+                       <div id="fetch">Fetch the marks</div>
+            Please select the stream:
+            <input type="radio" name="choice" value="sc" required id="science"> SCIENCE
+            <input type="radio" name="choice" value="co" id="commerce"> COMMERCE
+            <input type="radio" name="choice" value="ar" id="arts"> ARTS<br>
+            <input type="submit" name="submit" id="submitform">                         
+        </form>
+    </div></div>
+</body>
+</html>
